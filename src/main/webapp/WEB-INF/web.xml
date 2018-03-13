@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	metadata-complete="true" version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>com.orderFood.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>InfoServlet</servlet-name>
+  	<servlet-class>com.orderFood.servlet.customer.InfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>UserInfoServlet</servlet-name>
+  	<servlet-class>com.orderFood.servlet.shopper.UserInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>DishesInfoServlet</servlet-name>
+  	<servlet-class>com.orderFood.servlet.shopper.DishesInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<servlet-class>com.orderFood.servlet.customer.IndexServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/index/login.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>InfoServlet</servlet-name>
+  	<url-pattern>/index/info.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>UserInfoServlet</servlet-name>
+  	<url-pattern>/shopper/userInfo.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>DishesInfoServlet</servlet-name>
+  	<url-pattern>/shopper/dishesInfo.action</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>IndexServlet</servlet-name>
+  	<url-pattern>/index/index.action</url-pattern>
+  </servlet-mapping>
+</web-app>
